@@ -1,0 +1,27 @@
+.container {
+    margin: 0 auto;
+    padding: 24px 0;
+    box-sizing: border-box;
+}
+
+.gallery {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+    max-width: 1128px;
+}
+
+.gallery img {
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+
+.gallery-item {
+    flex: 0 0 calc((100% - 2 * 24px) / 3);
+}
